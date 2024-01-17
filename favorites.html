@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" id="root" color-scheme="light">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+        <title>Superhero Hunter</title>
+
+        <!-- fontawesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CSS file linked -->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/favorites.css">
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="flex-row navbar">
+            <div class="flex-row navbar-brand">
+                <img class="logo" src="./images/shield.png" alt="logo">
+                <a href="./index.html"><span>Superhero Hunter</span></a>
+
+            </div>
+
+            <!--  -->
+
+            <a class="flex-row link-to-different-page"
+                href="./index.html">
+                <button class="btn fav-btn home-btn">&nbsp;
+                    Home</button>
+
+                <a class="flex-row link-to-different-page"
+                    href="./favorites.html">
+                    <button class="btn fav-btn"> <i
+                            class="fa-solid fa-heart fav-icon"></i> &nbsp;
+                        Favourites</button>
+                </a>
+            </div>
+        </nav>
+
+        <div class="favourite-characters">
+            <div class="flex-row cards-container" id="container">
+
+            </div>
+        </div>
+
+        <span data-visiblity="hide" class="remove-toast">Removed from
+            Favourites</span>
+
+        <!-- Background image -->
+        <img class="bg-img" src="./images/Superhero new 2.jpg" alt>
+
+        <!-- js file linked -->
+        <script src="./JS/favorites.js"></script>
+
+    </body>
+
+</html>

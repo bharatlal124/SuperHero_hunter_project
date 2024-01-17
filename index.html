@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" id="root" color-scheme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/shield.png"
+            type="image/x-icon">
+        <title>Super Hero Hunter</title>
+<!-- font-awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS file linked -->
+        <link rel="stylesheet" href="CSS/style.css">
+<!-- crypto-js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
+            integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        
+    </head>
+    <body class="flex-col">
+
+        <nav class="flex-row navbar">
+            <div class="flex-row navbar-brand">
+                <img class="logo" src="./images/shield.png" alt="logo">
+                <a href="./index.html"><span>Superhero Hunter</span></a>
+
+            </div>
+
+            <!--  -->
+            
+                <a class="flex-row link-to-different-page"
+                    href="./favorites.html">
+                    <button class="btn fav-btn"> <i
+                            class="fa-solid fa-heart fav-icon"></i> &nbsp;
+                        Favourites</button>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Search Bar and Search Results -->
+        <div class="flex-col searchBar-items">
+            <div class="search-bar-container" class="flex-row">
+                
+                <input id="search-bar" type="text" autocomplete="off"
+                    placeholder="Search here">
+            </div>
+            <div class="flex-col" id="search-results">
+                
+            </div>
+        </div>
+
+        
+
+        <!-- Toasts for notifying user that character is added or removed from favourites -->
+        <span data-visiblity="hide" class="fav-toast">Added to favourites</span>
+        <span data-visiblity="hide" class="remove-toast">Removed from
+            favourites</span>
+<!-- background image -->
+        <img class="bg-img" src="./images/Superhero new 2.jpg" alt>
+
+        <!-- js file linked -->
+        <script src="JS/main.js"></script>
+    </body>
+</html>
