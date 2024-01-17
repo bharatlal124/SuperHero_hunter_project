@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #f5f5f777;
+    --navbar-background-color: #404040;
+    --navbar-color: rgb(5, 120, 251);
+    --searchBar-box-shadow: rgba(13,76,146,1);
+    --text-color: #f5f5f7;
+    
+}
+
+/* css for body */
+body {
+    background-color: var(--background-color);
+    background-color: #7c7c7c;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+/*css for Navbar -- */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--navbar-background-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+}
+
+.navbar-brand {
+    align-items: center;
+    gap: 10px;
+    color: #f5f5f7;
+}
+
+.navbar-brand a{
+    text-decoration: none;
+    color: var(--navbar-color);
+}
+
+.logo {
+    width: 2%;
+    min-width: 35px;
+    margin-left: 10px;
+
+}
+
+.link-to-different-page{
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var(--navbar-color);
+    border-radius: 10px;
+    color: #f5f5f7;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+.fav-btn {
+    font-size: 16px;
+    width: 140px;
+}
+
+.fav-icon {
+    color: #f5f5f7;
+}
+
+
+/*- css for Search Bar and Results-- */
+
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.search-icon-container {
+    background: var(--navbar-background-color);
+    box-shadow: 0px 0px 7px 0px var(--searchBar-box-shadow);
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.searchBar-items {
+    min-width: 40%;
+}
+
+#search-bar {
+    background: var(--navbar-background-color);
+    color: #fff;
+    min-width: 550px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border:2px solid var(--navbar-color); 
+    box-shadow: 0px 7px 7px 0px var(--searchBar-box-shadow);
+    border-radius: 10px ;
+    outline: none;
+    padding: 10px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 20px;
+}
+
+.img-info {
+    gap: 10px;
+}
+
+.img-info img {
+    width: 65px;
+}
+
+#search-results {
+    min-width: 435px;
+    margin-top: 30px;
+    list-style: none;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+}
+
+#search-results li {
+    background: rgba(56, 56, 56, 0.6);
+    height: 100px;
+    color: white;
+    width: 100%;
+}
+
+#search-results li .hero-name {
+    transition: all 0.2s ease;
+
+}
+
+#search-results li:hover .hero-name {
+    color: rgb(0, 26, 255);
+}
+
+.single-search-result {
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    width: inherit;
+}
+
+.character-info {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-info {
+    display: flex;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 26px;
+}
+
+.buttons {
+    gap: 5px;
+    padding: 0 10px;
+}
+
+/*- css fro Background Image --- */
+.bg-img {
+    width: 100%;
+    max-height:92%;
+    min-width: 600px;
+    /* height: auto; */
+    position:fixed;
+    /* bottom: -30px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* css for Toast for notification-*/
+.fav-toast,
+.remove-toast {
+    position: absolute;
+    bottom: 100px;
+    font-size: 24px;
+    width: 350px;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    z-index: 2;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.fav-toast[data-visiblity="show"],
+.remove-toast[data-visiblity="show"] {
+    display: block;
+}
+
+.fav-toast[data-visiblity="hide"],
+.remove-toast[data-visiblity="hide"] {
+    display: none;
+}
+
+.fav-toast {
+    background-color: hsl(219, 100%, 61%);
+    box-shadow: 0px 0px 3px 3px white;
+}
+
+.remove-toast {
+    background-color: hsl(219, 100%, 61%);
+    box-shadow: 0px 0px 3px 3px white;
+}
+
+
