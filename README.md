@@ -1,6 +1,12 @@
 ## SuperHero_Hunter_Project : README
 
  This is a simple Overview of this project
+ 
+ # MARVEL API lINK :
+ https://developer.marvel.com/docs
+
+# AUTHORIZING AND SIGNING REQUESTS LINK :
+ https://developer.marvel.com/documentation/authorization
 
 ## Public OR Private Api key :
 
@@ -16,6 +22,7 @@
 
 - Clone the repository to your local machine.
 - Open a terminal and navigate to the project directory.
+- open index.html file on web
 
 ## Overview of this Project :
 
